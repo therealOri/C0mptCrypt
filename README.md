@@ -11,7 +11,11 @@
 **Install**
 
 ```
-pip install git+https://github.com/execution/C0mptCrypt
+My version/fork:
+- pip install git+https://github.com/therealOri/C0mptCrypt
+
+Original Version:
+- pip install git+https://github.com/execution/C0mptCrypt
 ```
 
 <h1></h1>
