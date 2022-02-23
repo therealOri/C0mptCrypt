@@ -42,3 +42,6 @@ enc = C0mptCrypt().Decrypt(string)
 
 print(enc)
 ```
+__ __
+
+My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/cokoxamuka.py)
