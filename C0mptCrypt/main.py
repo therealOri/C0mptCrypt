@@ -13,7 +13,7 @@ from Crypto.Util.Padding import pad, unpad
 class C0mptCrypt:
 
     def __init__(self):
-        self.hash_key = hashlib.blake2b("c0mpt0_&_Ori".encode('utf-8'), digest_size=35).digest()
+        self.hash_key = hashlib.blake2b("c0mpt0_&_Ori".encode('utf-8'), digest_size=16).digest()
 
     def Clear(self):
         os.system('clear||cls')
