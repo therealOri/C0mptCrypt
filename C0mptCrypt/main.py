@@ -10,7 +10,7 @@ from Crypto.Util.Padding import pad, unpad
 # Contributor: therealOri
 
 
-class C0mptCrypt:
+class Crypt0r:
 
     def __init__(self):
         self.hash_key = hashlib.blake2b("c0mpt0_&_Ori".encode('utf-8'), digest_size=16).digest()
