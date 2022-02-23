@@ -12,6 +12,7 @@
 
 ```
 My version/fork:
+(Uses Blake2b hashing instead of md5 and has a better clear function)
 - pip install git+https://github.com/therealOri/C0mptCrypt
 
 Original Version:
