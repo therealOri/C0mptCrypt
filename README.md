@@ -44,4 +44,4 @@ print(enc)
 ```
 __ __
 
-My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/cokoxamuka.py)
+My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/udukibezoy.py)
