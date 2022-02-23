@@ -8,7 +8,22 @@
 
 <h1></h1>
 
-**Install**
+<br />
+<br />
+
+# Updates
+What has been updated as of | 2/23/22:
+
+> - New hashing method using blake2b instead of md5.
+> - Cleaned up the old clear() function so now it still works on windows and linux systems but with no if checks/statements.
+> - Changed Class name to avoid redundancy in names when importing. (The class name is now "Crypt0r")
+> - Updated the code in my sample file linked below under the Code Examples to reflect Class name change update.
+> - And finally updated the Code Example below to match the Class name change update, as well as some minor improvements to this README.md file.
+
+<br />
+<br />
+
+# Installation
 
 ```
 My version/fork:
@@ -18,29 +33,26 @@ My version/fork:
 Original Version:
 - pip install git+https://github.com/execution/C0mptCrypt
 ```
+__ __
 
-<h1></h1>
+<br />
+<br />
 
-**Code Example**
+# Code Example
 
 ```python
-from C0mptCrypt import C0mptCrypt
+from C0mptCrypt import Crypt0r
 
+#Encrypting
 string = input("Enter string: ")
+encr = Crypt0r().Encrypt(string)
+print(encr)
 
-enc = C0mptCrypt().Encrypt(string)
 
-print(enc)
-```
-
-```python
-from C0mptCrypt import C0mptCrypt
-
-string = input("Enter encrypted string: ")
-
-enc = C0mptCrypt().Decrypt(string)
-
-print(enc)
+#Decrypting
+string2 = input("Enter string: ")
+decr = Crypt0r().Decrypt(string2)
+print(decr)
 ```
 __ __
 
