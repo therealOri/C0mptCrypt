@@ -1,1 +1,1 @@
-from C0mptCrypt.main import C0mptCrypt
+from C0mptCrypt.main import Crypt0r
