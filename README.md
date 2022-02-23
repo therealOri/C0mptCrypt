@@ -56,4 +56,4 @@ print(decr)
 ```
 __ __
 
-My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/usubugimew.py)
+My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/ajukididin.py)
