@@ -27,11 +27,11 @@ What has been updated as of | 2/23/22:
 
 ```
 My version/fork:
-(Uses Blake2b hashing instead of md5 and has a better clear function)
+(Uses Blake2b hashing instead of md5, has a better clear function, and has a different class name when importing.)
 - pip install git+https://github.com/therealOri/C0mptCrypt
 
 Original Version:
-- pip install git+https://github.com/execution/C0mptCrypt
+- https://github.com/execution/C0mptCrypt
 ```
 __ __
 
