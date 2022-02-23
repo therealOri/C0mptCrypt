@@ -3,7 +3,7 @@
     C0mptCrypt - An object-oriented, minamalistic, simple encryption library in Python.
 </h1>
 <p align="center">
-    C0mptCrypt allows you to encrypt strings of text via AES, and decrypt that text. It can only be decrypted using C0mptCrypt and not by random online tools. You can use this for a variety of things from creating passwords, to encrypting HWIDs and much more!.
+    C0mptCrypt allows you to encrypt and decrypt strings of text via AES. Your encrypted data/strings can only be decrypted using either your own custom key you set before encrypting said data, or by using C0mptCrypt's default key options. You can use this for a variety of things from creating passwords, to encrypting HWIDs and much more!. Making AES encryption a little bit easier!
 </p>
 
 <h1></h1>
@@ -18,6 +18,7 @@ What has been updated as of | 2/23/22:
 > - Cleaned up the old clear() function so now it still works on windows and linux systems but with no if checks/statements.
 > - Changed Class name to avoid redundancy in names when importing. (The class name is now "Crypt0r")
 > - Updated the code in my sample file linked below under the Code Examples to reflect Class name change update.
+> - A way for you as a user to use your own custom key for the encryption. (Making things even MORE secure.)
 > - And finally updated the Code Example below to match the Class name change update, as well as some minor improvements to this README.md file.
 
 <br />
