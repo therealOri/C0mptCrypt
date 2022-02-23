@@ -13,7 +13,27 @@ from Crypto.Util.Padding import pad, unpad
 class Crypt0r:
 
     def __init__(self):
-        self.hash_key = hashlib.blake2b("c0mpt0_&_Ori".encode('utf-8'), digest_size=16).digest()
+        try:
+            option = int(input('1. Custom key\n2. Default key\n\nEnter: '))
+            self.Clear()
+            
+            if option == 1:
+                key = input('Pls gib encryption key?: ')
+                self.hash_key = hashlib.blake2b(key.encode('utf-8'), digest_size=16).digest()
+            elif option == 2:
+                print('Using the "Default key" option!\n')
+                self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16).digest()
+            else:
+                print('That is not a valid option..Using the "Default key" option.\n')
+                input('Press "Enter" to continue...')
+                self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16).digest()
+        except Exception as e:
+            self.Clear()
+            print(f'Oops..That is not a number/integer..Using the "Default key" option.\nError: {e}\n')
+            input('Press "Enter" to continue...')
+            self.Clear()
+            self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16).digest()
+            
 
     def Clear(self):
         os.system('clear||cls')
