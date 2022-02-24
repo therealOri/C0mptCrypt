@@ -62,12 +62,23 @@ class Crypt0r:
         return e.decode()
     
     def Decrypt(self, string):
+        FLAG = True
         r = base64.b64decode(string)
-        c = AES.new(self.hash_key, AES.MODE_CBC, r[:AES.block_size])
-        d = unpad(c.decrypt(r[AES.block_size:]), AES.block_size)
-        self.DecryptSpinner()
-        self.Clear()
-        return d.decode()
+        try:
+            c = AES.new(self.hash_key, AES.MODE_CBC, r[:AES.block_size])
+            d = unpad(c.decrypt(r[AES.block_size:]), AES.block_size)
+        except Exception as e:
+            self.Clear()
+            print(f'Oops..An error has occured. Please try again.\nError: {e}\n\n')
+            input('Press "Enter" to contine...')
+            self.Clear()
+            FLAG = False
+        if FLAG == True:
+            self.DecryptSpinner()
+            self.Clear()
+            return d.decode()
+        else:
+            return None
 
 
 
