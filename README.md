@@ -21,6 +21,11 @@ What has been updated as of | 2/23/22:
 > - A way for you as a user to use your own custom key for the encryption. (Making things even MORE secure.)
 > - Blake2b hash salting. Making the hashing even more unique and secure!
 > - And finally updated the Code Example below to match the Class name change update, as well as some minor improvements to this README.md file.
+__ __
+
+What has been updated as of | 2/24/22:
+
+> - Decryption error handling. `Crypt0r().Decrypt(string2)` will return `None` now if any errors happen and will allow you to contine on.
 
 <br />
 <br />
@@ -58,4 +63,4 @@ print(decr)
 ```
 __ __
 
-My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/ajukididin.py)
+My own sample file for this project: [crypt_sample.py](https://haste.powercord.dev/kopibogovo.py)
