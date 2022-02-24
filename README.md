@@ -25,7 +25,7 @@ __ __
 
 What has been updated as of | 2/24/22:
 
-> - Decryption error handling. `Crypt0r().Decrypt(string2)` will return `None` now if any errors happen and will allow you to contine on.
+> - Decryption error handling. `Crypt0r().Decrypt(string2)` will return `None` now if any errors happen and will allow you to contine on with the rest of your code.
 
 <br />
 <br />
@@ -58,7 +58,7 @@ print(encr)
 
 #Decrypting
 string2 = input("Enter string: ")
-decr = Crypt0r().Decrypt(string2)
+decr = Crypt0r().Decrypt(string2) #Will return "None" if any errors happen.
 print(decr)
 ```
 __ __
