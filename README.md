@@ -19,6 +19,7 @@ What has been updated as of | 2/23/22:
 > - Changed Class name to avoid redundancy in names when importing. (The class name is now "Crypt0r")
 > - Updated the code in my sample file linked below under the Code Examples to reflect Class name change update.
 > - A way for you as a user to use your own custom key for the encryption. (Making things even MORE secure.)
+> - Blake2b hash salting. Making the hashing even more unique and secure!
 > - And finally updated the Code Example below to match the Class name change update, as well as some minor improvements to this README.md file.
 
 <br />
