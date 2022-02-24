@@ -25,7 +25,7 @@ __ __
 
 What has been updated as of | 2/24/22:
 
-> - Decryption error handling. `Crypt0r().Decrypt(string2)` will return `None` now if any errors happen and will allow you to contine on with the rest of your code.
+> - Decryption error handling. `Crypt0r().Decrypt()` will return `None` now if any errors happen and will allow you to contine on with the rest of your code.
 
 <br />
 <br />
