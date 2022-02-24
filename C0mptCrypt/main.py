@@ -14,7 +14,7 @@ class Crypt0r:
 
     def __init__(self):
         try:
-            option = int(input('1. Custom key\n2. Default key\n\nEnter: '))
+            option = int(input('1. Make encryption key unique. - (custom)?\n2. Use system defaults. - (default)?\n\nEnter: '))
             self.Clear()
             
             if option == 1:
@@ -22,15 +22,15 @@ class Crypt0r:
                 salt = input('Pls gib a word for the salt? [16 characters MAX]: ')
                 self.hash_key = hashlib.blake2b(key.encode('utf-8'), digest_size=16, salt=bytes(salt, 'utf-8')).digest()
             elif option == 2:
-                print('Using the "Default key" option!\n')
+                print('Using the "System defaults" option!\n')
                 self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16, salt=bytes('eihPliAgHpItgBlw', 'utf-8')).digest()
             else:
-                print('That is not a valid option..Using the "Default key" option.\n')
+                print('That is not a valid option..Using the "System defaults" option.\n')
                 input('Press "Enter" to continue...')
                 self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16, salt=bytes('eihPliAgHpItgBlw', 'utf-8')).digest()
         except Exception as e:
             self.Clear()
-            print(f'Oops..An error has occured..Using the "Default key" option.\nError: {e}\n')
+            print(f'Oops..An error has occured..Using the "System defaults" option.\nError: {e}\n')
             input('Press "Enter" to continue...')
             self.Clear()
             self.hash_key = hashlib.blake2b('c0mpt0_&_Ori'.encode('utf-8'), digest_size=16, salt=bytes('eihPliAgHpItgBlw', 'utf-8')).digest()
